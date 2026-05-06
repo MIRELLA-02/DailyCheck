@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Check</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="temperatura.html">Temperatura</a>
+        <a class="menu" href="tarefas.html">Tarefas</a>
+    </nav>
+
+    <div id="modal-tarefa" class="modal">
+        <div class="caixa-maior">
+            <input class="input-cidade" id="nome" placeholder="Nome">
+            <input class="input-cidade" id="dataInicio" type="date">
+            <input class="input-cidade" id="dataFim" type="date">
+            <input class="input-cidade" id="descricao" placeholder="Descrição">
+            <input class="input-cidade" id="imagem" placeholder="URL da Imagem">
+            <button class="botao-buscar" onclick="salvarTarefa()">Salvar</button>
+            <button class="botao-buscar" onclick="fecharModal()">Sair</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

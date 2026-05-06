@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('https://i.pinimg.com/1200x/15/76/be/1576be3a76096598491e37e33ba85c42.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(185, 45, 45, 0.9);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.input-cidade {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: rgba(245, 222, 179, 0.8);
+    color: #4a4a4a;
+    width: 250px;
+}
+
+.input-cidade::placeholder {
+    color: #6e6e6e;
+    width: 150px;
+    height: 150px;
+}
+
+.botao-buscar {
+    background-color: #dfc987; 
+  color: #333;              
+  border: none;              
+  padding: 10px 20px;        
+  border-radius: 25px;       
+  cursor: pointer;           
+  font-weight: bold;         
+  transition: background 0.3s;
+}
+
+
+.img-busca {
+    width: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.card-tempo {
+    margin-top: 40px;
+    background: rgba(225, 202, 99, 0.984);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 25px;
+    width: 90%;
+    max-width: 350px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.cidade {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.temp {
+    font-size: 45px;
+    margin-top: 10px;
+    color: #c80909;
+}
+
+.caixa-menor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.texto-previsao {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.umidade {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-historico {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(244, 162, 97, 0.3);
+    border-radius: 20px;
+    padding: 15px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-historico:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.menu {
+    text-decoration: none;
+    color: #edb604;
+
+}
+.card-tarefa {
+    background: rgba(245, 222, 179, 0.9); 
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-tarefa img {
+    width: 150;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-tarefa .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .input-cidade {
+        width: 180px;
+    }
+
+    .temp {
+        font-size: 35px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+}
+
+#tarefas-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}

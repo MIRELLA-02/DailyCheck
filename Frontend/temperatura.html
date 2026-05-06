@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Check</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="temperatura.html">Temperatura</a>
+        <a class="menu" href="tarefas.html">Tarefas</a>
+    </nav>
+
+    <div class="caixa-maior">
+        <input class="input-cidade" placeholder="Digite a cidade">
+        <button class="botao-buscar" onclick="cliqueNoBotao()">Buscar</button>
+
+        <div class="weather-card">
+            <h2 class="cidade">Tempo em...</h2>
+            <p class="temp">-- °C</p>
+            <img class="img-previsao" src="">
+            <p class="texto-previsao">--</p>
+            <p class="umidade">Umidade: --</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
